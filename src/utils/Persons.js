@@ -1,37 +1,37 @@
 export default class Persons {
-    constructor(state = []) {
-        this.state = state;
-    }
+  constructor(state = []) {
+    this.state = state;
+  }
 
-    get() {
-        return this.state;
-    }
+  get() {
+    return this.state;
+  }
 
-    indexOf(person) {
-        return this.state.findIndex(entry => entry.id === person.id);
-    }
+  indexOf(person) {
+    return this.state.findIndex((entry) => entry.id === person.id);
+  }
 
-    has(person) {
-        return this.indexOf(person) > -1;
-    }
+  has(person) {
+    return this.indexOf(person) > -1;
+  }
 
-    update(person) {
-        const state = this.state.map(entry => {
-            return entry.id === person.id
-                ? person
-                : entry;
-        });
+  update(person) {
+    const state = this.state.map((entry) => {
+      return entry.id === person.id ? person : entry;
+    });
 
-        return new Persons(state);
-    }
+    return new Persons(state);
+  }
 
-    add(person) {
-        return new Persons([...this.state, person]);
-    }
+  add(person) {
+    const newPerson = new Persons([...this.state, person]);
 
-    upsert(person) {
-        return this.has(person)
-            ? this.update(person)
-            : this.add(person);
-    }
+    console.log(this.state);
+
+    return newPerson;
+  }
+
+  upsert(person) {
+    return this.has(person) ? this.update(person) : this.add(person);
+  }
 }
