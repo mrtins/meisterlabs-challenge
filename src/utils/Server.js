@@ -1,4 +1,4 @@
-import Persons from './utils/Persons';
+import Persons from './Persons';
 
 const state = {
   id: 0,
