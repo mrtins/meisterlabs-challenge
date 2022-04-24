@@ -24,14 +24,15 @@ export default class Persons {
   }
 
   add(person) {
-    const newPerson = new Persons([...this.state, person]);
-
-    console.log(this.state);
-
-    return newPerson;
+    return new Persons([...this.state, person]);
   }
 
   upsert(person) {
     return this.has(person) ? this.update(person) : this.add(person);
+  }
+
+  remove(person) {
+    const state = this.state.filter((el) => el.id !== person.id);
+    return new Persons(state);
   }
 }
