@@ -1,6 +1,6 @@
+import Client from 'pages/Client/Client';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Client from './pages/Client';
 import reportWebVitals from './reportWebVitals';
 import './styles/App.css';
 import './styles/index.css';
