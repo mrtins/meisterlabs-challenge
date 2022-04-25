@@ -3,6 +3,10 @@
 [![Languages](https://img.shields.io/github/languages/count/mrtins/meisterlabs-challenge)](#)
 [![Top Language](https://img.shields.io/github/languages/top/mrtins/meisterlabs-challenge)](#)
 
+> A simple optimistic updates application using Javacript classes
+
+---
+
 # :pushpin: Table of Contents
 
 - [Meister Labs Challenge](#meister-labs-challenge)
