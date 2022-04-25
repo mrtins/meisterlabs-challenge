@@ -31,7 +31,7 @@ export default function Client() {
     return console.log(`Person saved: `, person);
   };
 
-  /*  [WIP]: Waiting on backend team to develop this API service 🙄
+  /*  [WIP]: Waiting on backend team to develop this API service 😅
    *  TODO: Integrate with backend API
    */
   const deletePerson = (person: Person) => {

@@ -1,7 +1,11 @@
 {
-  "name": "src",
+  "name": "meisterlabs-js",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Vitor Martins",
+    "email": "vitorfigmartins@gmail.com"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
